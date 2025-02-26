@@ -24,28 +24,31 @@ body {
     background-color: #22223b;
     width: 100%;
     display: grid;
-    grid-template-columns:repeat(5, 300px);
+    grid-template-columns:repeat(5, 350px);
     gap: 30px;
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 350px);
     height: 100vh;
     padding-left: 0px;
     margin-top: 20px;
 }
 .Anotações {
     border-radius: 30px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 350px;
     background-color: #03071e;
 }
 .Anotações h1 {
-   padding: 20px; 
+   padding: 20px;
+   margin-top: -20px;
    text-transform: capitalize;
    position: relative;
 }
 .Anotações h1::after {
-    width: 190px;
+    width: 315px;
     height: 3px;
-    bottom: 20%;
+    bottom: 15%;
     left: 15px;
     background-color: #9a8c98;
     position: absolute;
@@ -104,5 +107,22 @@ button {
 }
 button:hover {
     background-color: #9a8c98;
+    transition: 0.5s ease-in-out;
+}
+i {
+    cursor: pointer;
+}
+#correct {
+font-size: 3rem;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+padding-left: 15px;
+margin-top: 20px;
+}
+#alinhar {
+    display: flex;
+}
+.green {
+    color: green;
     transition: 0.5s ease-in-out;
 }
